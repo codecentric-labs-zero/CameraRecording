@@ -37,7 +37,9 @@ export default class CameraRecording extends Component {
               }}
               style={styles.preview}
               aspect={Camera.constants.Aspect.fill}
-              captureMode={Camera.constants.CaptureMode.video}>
+              captureMode={Camera.constants.CaptureMode.video}
+              captureQuality={Camera.constants.CaptureQuality.medium}
+              type={Camera.constants.Type.front}>
             <Text style={styles.capture} onPress={
               this.takePicture.bind(this)
             }>{buttonText}</Text>
